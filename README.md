@@ -46,6 +46,8 @@ The project architecture is set up as a headless solution, consisting of an API 
 
 The data is mocked in JavaScript objects and only exists in memory. Any changes (additions or edits) will be lost when the server restarts.
 
+Next step would be to hook up a MySQL database for data persistency, but that is kept out of scope for this task.
+
 Mock data is located in:
 
 `/src/data/content.ts`

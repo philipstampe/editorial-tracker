@@ -21,7 +21,8 @@ app.use(express.json());
 
 app.use((req, res, next) => {
   if (unauthPaths.includes(req.path)) {
-    return next();
+    next();
+    return;
   }
   auth(req, res, next);
 });

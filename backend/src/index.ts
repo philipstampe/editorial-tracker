@@ -21,7 +21,6 @@ app.use(express.json());
 
 app.use((req, res, next) => {
   if (unauthPaths.includes(req.path)) {
-    console.log("No auth");
     return next();
   }
   auth(req, res, next);

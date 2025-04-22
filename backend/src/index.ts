@@ -19,7 +19,6 @@ app.use(cookieParser("NXwp0DZG1R"));
 
 app.use(express.json());
 
-//Understand this return next
 app.use((req, res, next) => {
   if (unauthPaths.includes(req.path)) {
     console.log("No auth");

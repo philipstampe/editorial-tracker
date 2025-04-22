@@ -19,8 +19,6 @@ export default function LoginForm() {
 
     if (res.ok) {
       window.location.reload();
-    } else {
-      console.log("error");
     }
   };
 

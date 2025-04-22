@@ -34,7 +34,7 @@ npm run build
 npm start
 ```
 
-This will start a server and API on `http://localhost:3000`
+This will start the frontend on `http://localhost:3000`
 
 ---
 

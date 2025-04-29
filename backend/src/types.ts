@@ -7,7 +7,9 @@ export type ContentStatus =
   | "review"
   | "published"
   | "archived";
+
 export type ContentType = "article" | "video" | "podcast";
+
 export type UserRole = "editor" | "contributor";
 
 export type ContentItem = {

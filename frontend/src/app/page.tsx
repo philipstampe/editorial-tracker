@@ -2,7 +2,7 @@ import React from "react";
 import { ContentItem } from "@/types";
 
 import LogOutForm from "@/components/LogOutForm";
-import LoginForm from "@/components/loginForm";
+import LoginForm from "@/components/LoginForm";
 import ContentList from "@/components/ContentList";
 import NewEntryForm from "@/components/NewEntryForm";
 

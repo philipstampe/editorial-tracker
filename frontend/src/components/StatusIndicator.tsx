@@ -6,12 +6,13 @@ type Props = {
 };
 
 export default function StatusIndicator({ status }: Props) {
-  const colors: Record<string, { bg: string; indicator: string }> = {
-    idea: { bg: "bg-blue-500/25", indicator: "bg-blue-500" },
-    draft: { bg: "bg-yellow-500/25", indicator: "bg-yellow-500" },
-    review: { bg: "bg-orange-500/25", indicator: "bg-orange-500" },
-    published: { bg: "bg-green-500/25", indicator: "bg-green-500" },
-    archived: { bg: "bg-slate-500/25", indicator: "bg-slate-500" }
+  const colors: Record<ContentStatus, { bg: string; indicator: string }> = {
+    "": { bg: "", indicator: "" },
+    "idea": { bg: "bg-blue-500/25", indicator: "bg-blue-500" },
+    "draft": { bg: "bg-yellow-500/25", indicator: "bg-yellow-500" },
+    "review": { bg: "bg-orange-500/25", indicator: "bg-orange-500" },
+    "published": { bg: "bg-green-500/25", indicator: "bg-green-500" },
+    "archived": { bg: "bg-slate-500/25", indicator: "bg-slate-500" }
   };
 
   const themeColor = colors[status];

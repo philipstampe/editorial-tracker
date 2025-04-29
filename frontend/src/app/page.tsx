@@ -40,11 +40,8 @@ export default async function Index() {
   };
 
   items.forEach((item: ContentItem) => {
-    if (groupedItems[item.status]) {
-      groupedItems[item.status].push(item);
-    } else {
-      groupedItems["blank"].push(item);
-    }
+    const key = item.status ?? 'blank';
+    groupedItems[key].push(item);
   });
 
   const mergedItems = Object.values(groupedItems).flat();

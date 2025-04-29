@@ -103,10 +103,10 @@ router.post("/content", (req: AuthenticatedRequest, res) => {
   const newContentItem = {
     id: nextItemId,
     title,
-    status,
-    deadline,
-    type,
-    authors,
+    status: status ? status: null,
+    deadline: deadline ? deadline: null,
+    type: type ? type : null,
+    authors: authors ? authors : [],
     createdBy
   };
 

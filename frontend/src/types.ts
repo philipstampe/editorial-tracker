@@ -1,5 +1,5 @@
 export type ContentStatus =
-  | ""
+  | null
   | "idea"
   | "draft"
   | "review"

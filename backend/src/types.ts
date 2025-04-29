@@ -1,7 +1,7 @@
 import { Request } from "express";
 
 export type ContentStatus =
-  | ""
+  | null
   | "idea"
   | "draft"
   | "review"

@@ -7,7 +7,6 @@ type Props = {
 
 export default function StatusIndicator({ status }: Props) {
   const key = status ? status : 'blank';
-  console.log(status)
   const colors: Record<Exclude<ContentStatus, null> | "blank", { bg: string | null; indicator: string | null }> = {
     "blank": { bg: null, indicator: null },
     "idea": { bg: "bg-blue-500/25", indicator: "bg-blue-500" },

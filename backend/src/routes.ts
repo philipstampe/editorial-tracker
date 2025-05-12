@@ -122,7 +122,7 @@ router.patch("/content/:id", (req, res) => {
   );
 
   if (!item) {
-    res.status(401).json({ error: "Entry not found" });
+    res.status(404).json({ error: "Entry not found" });
     return;
   }
 

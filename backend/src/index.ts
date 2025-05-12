@@ -15,6 +15,10 @@ app.use(
   })
 );
 
+/* Note:
+  Here for demostration purpose.
+  Salt should come from ENV file
+*/
 app.use(cookieParser("NXwp0DZG1R"));
 
 app.use(express.json());
